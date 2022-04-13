@@ -1,0 +1,24 @@
+This package was debianized by Domenico Andreoli <cavok@debian.org> on
+Sat, 22 Jul 2000 02:17:49 +0200.
+It is now maintained by Romain Francoise <rfrancoise@debian.org>
+
+It was downloaded from http://www.kyuzz.org/antirez/hping6.html
+
+Upstream Author: Salvatore Sanfilippo <antirez@invece.org>
+
+Copyright:
+
+  hping6 is free software. It comes under GPL version 2,
+  except for the following:
+
+  display_ipopt.c : from ping, BSD style license
+  libpcap library : BSD style license
+
+  for more information see the upper part of this files.
+
+  WARNING: hping6 is covered *ONLY* by GPL version 2, and *NOT* any others.
+
+  hping6 is Copyright (C) 1998, 1999 by Salvatore Sanfilippo.
+
+On Debian GNU/Linux systems, the complete text of the GNU Lesser General
+Public License can be found in `/usr/share/common-licenses'.

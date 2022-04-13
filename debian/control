@@ -1,0 +1,21 @@
+Source: hping6
+Section: net
+Priority: extra
+Maintainer: Romain Francoise <rfrancoise@debian.org>
+Standards-Version: 3.6.2.1
+Build-Depends: debhelper (>> 5.0.0)
+
+Package: hping6
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Active Network Smashing Tool
+ hping6 is a network tool able to send custom ICMP/UDP/TCP packets and
+ to display target replies like ping does with ICMP replies. It handles
+ fragmentation and arbitrary packet body and size, and can be used to
+ transfer files under supported protocols. Using hping6, you can test
+ firewall rules, perform (spoofed) port scanning, test network
+ performance using different protocols, do path MTU discovery, perform
+ traceroute-like actions under different protocols, fingerprint remote
+ operating systems, audit TCP/IP stacks, etc.
+ .
+ Homepage: http://www.hping.org/

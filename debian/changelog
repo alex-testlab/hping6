@@ -1,0 +1,152 @@
+hping2 (2.rc3-4) unstable; urgency=low
+
+  * Apply man page patch from Timo Juhani Lindfors <timo.lindfors@iki.fi>
+    (closes: #342485).
+
+  * debian/compat: New file, switch to compat level 5.
+  * debian/rules: Remove obsolete DH_COMPAT variable.
+  * debian/control: Bump Standards-Version to 3.6.2.1, no changes needed.
+
+ -- Romain Francoise <rfrancoise@debian.org>  Sat, 10 Dec 2005 14:35:24 +0100
+
+hping2 (2.rc3-3) unstable; urgency=low
+
+  * Revert previous patch and really fix bytesex.h by using endian.h and
+    not doing all the work all over again; fixes FTBFS on several other
+    archs.
+
+ -- Romain Francoise <rfrancoise@debian.org>  Mon, 21 Jun 2004 23:32:21 +0200
+
+hping2 (2.rc3-2) unstable; urgency=low
+
+  * Apply patch from Frederik Schueler <fs@lowpingbastards.de> to fix
+    FTBFS on amd64 (closes: #255444).
+
+ -- Romain Francoise <rfrancoise@debian.org>  Mon, 21 Jun 2004 07:51:58 +0200
+
+hping2 (2.rc3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix 'ambigous' typo in antigetopt.c.
+
+ -- Romain Francoise <rfrancoise@debian.org>  Sun, 20 Jun 2004 16:34:57 +0200
+
+hping2 (2.rc2-5) unstable; urgency=low
+
+  * New maintainer (closes: #249573).
+  * debian/control:
+    + Update maintainer contact information.
+    + Reword description.
+  * debian/copyright: Mention maintainer change.  
+
+ -- Romain Francoise <rfrancoise@debian.org>  Sat, 22 May 2004 20:15:28 +0200
+
+hping2 (2.rc2-4) unstable; urgency=low
+
+  * Fixed typo in file statistics.c (closes: #236517).
+
+ -- Domenico Andreoli <cavok@debian.org>  Sun,  7 Mar 2004 04:35:42 +0100
+
+hping2 (2.rc2-3) unstable; urgency=low
+
+  * Removed duplicate files (closes: #208946).
+
+ -- Domenico Andreoli <cavok@debian.org>  Sat,  3 Jan 2004 04:58:51 +0100
+
+hping2 (2.rc2-2) unstable; urgency=low
+
+  * Applied patch for ATM, WLAN and Token Ring support (closes: #193436).
+
+ -- Domenico Andreoli <cavok@debian.org>  Sun, 18 May 2003 15:01:54 +0200
+
+hping2 (2.rc2-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Mon, 20 Jan 2003 23:41:29 +0100
+
+hping2 (2.rc1-2) unstable; urgency=low
+
+  * Fixed a typo in hping2 description (Closes: #124740).
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 18 Jan 2002 21:15:22 +0100
+
+hping2 (2.rc1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Now french man page gets installed. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Fri, 17 Aug 2001 01:38:38 +0200
+
+hping2 (2.beta55-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Wed,  1 Aug 2001 14:40:30 +0200
+
+hping2 (2.beta54-9) unstable; urgency=low
+
+  * Fixed the option parsing code (Closes: #90114). 
+
+ -- Domenico Andreoli <cavok@debian.org>  Thu, 29 Mar 2001 15:28:16 +0200
+
+hping2 (2.beta54-8) unstable; urgency=low
+
+  * Added versioned Build-Depend for debhelper. 
+
+ -- Domenico Andreoli <cavok@debian.org>  Tue,  6 Mar 2001 15:17:20 +0100
+
+hping2 (2.beta54-7) unstable; urgency=low
+
+  * Switched to debhelper compatibility version 2.
+  * Added some missing includes for header files. hping2 became not
+    succesfully compilable after some recent upgrade of libc6.
+
+ -- Domenico Andreoli <cavok@debian.org>  Wed, 28 Feb 2001 15:58:24 +0100
+
+hping2 (2.beta54-6) unstable; urgency=low
+
+  * Made some adjustments in postinst and in prerm to cope with
+    dpkg-statoverride. 
+  * Removed the Build-Dependency on libtool since this package doesn't
+    use it in the build process. I really don't remember why I put it there.
+
+ -- Domenico Andreoli <cavok@libero.it>  Mon, 12 Feb 2001 16:00:13 +0100
+
+hping2 (2.beta54-5) unstable; urgency=low
+
+  * Reordered documentation files. 
+  * Added hping2's author warning about hping2 being installed as
+    suid to debconf explanation. Question asked by debconf should be
+    more clear and hopefully authoritative.
+
+ -- Domenico Andreoli <cavok@libero.it>  Wed,  6 Sep 2000 15:33:06 +0200
+
+hping2 (2.beta54-4) unstable; urgency=low
+
+  * Fixed wrong Build-Depends, added debconf to Depends.
+
+ -- Domenico Andreoli <cavok@libero.it>  Mon,  4 Sep 2000 00:01:38 +0200
+
+hping2 (2.beta54-3) unstable; urgency=low
+
+  * Fixed overwriting of /usr/share/man/man3/pcap.3.gz (Closes: #70490).
+    Now pcap.3.gz is not installed at all since the interested user would
+    be better to install package libpcap-dev.
+
+ -- Domenico Andreoli <cavok@libero.it>  Sat,  2 Sep 2000 04:46:18 +0200
+
+hping2 (2.beta54-2) unstable; urgency=low
+
+  * Now, thanks to debconf, the administrator can choose whether to
+    install hping2 as setuid or not.
+  * I hope I found a more meaningful short description for
+    this package. :) 
+
+ -- Domenico Andreoli <cavok@libero.it>  Fri,  1 Sep 2000 19:25:14 +0200
+
+hping2 (2.beta54-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Domenico Andreoli <cavok@libero.it>  Sat, 22 Jul 2000 14:09:34 +0200

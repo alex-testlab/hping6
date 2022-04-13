@@ -1,0 +1,78 @@
+
+DESCRIPTION
+
+	hping6 is a network tool able to send custom ICMP/UDP/TCP
+	packets and to display target replies like ping do with
+	ICMP replies. hping6 handle fragmentation, arbitrary packet
+	body and size and can be used in order to transfer files
+	under supported protocols. Using hping6 you are able at
+	least to perform the following jobs:
+
+	- Test firewall rules
+	- [spoofed] port scanning
+	- Test net performance using differents protocols,
+	  packet size, TOS (type of service) and fragmentation.
+	- Path MTU discovery
+	- Files trasfering even between really fascist firewall rules.
+	- Traceroute like under different protocols.
+	- Firewalk like usage.
+	- Remote OS fingerprint.
+	- TCP/IP stack auditing.
+	- IPv6 support
+	- A lot of others.
+
+	It's also really a good didactic tool to learn TCP/IP.
+
+	hping6 is developed and manteined by antirez@invece.org
+	and comes under GPL version 2 of license. Developing is
+	open so you can send me patches/suggestions/affronts without
+	inhibitions.
+
+	Thanks to the following peoples for them suggestions/tests/tools/code:
+
+	Valeriano Bedeschi	<vale@seclab.com>
+	Lorenzo Cavallaro	<sullivan@seclab.com>
+	awgn roofing		<root@roof.penguinpowered.com>
+	Darren Reed		<avalon@COOMBS.ANU.EDU.AU>
+	Alfonso De Gregorio	<dira@speedcom.it>
+	Mika			<mika@qualys.com>
+	Yann Berthier		<Yann.Berthier@hsc.fr>
+	Lance Spitzner		<lance@spitzner.net>
+	Stephane Aubert		<Stephane.Aubert@hsc.fr>
+	Nicolas Jombart		<Nicolas.Jombart@hsc.fr>
+	Denis Ducamp		<Denis.Ducamp@hsc.fr>
+	Francesco Potorti`	<pot@gnu.org>
+	Stefano Brandimarte	<stevens@alicom.com>
+	"roy kozzer"		<royk50@hotmail.com>
+	Jason Lunz		<j@trellisinc.com>
+	Domenico Andreoli	<cavok@filibusta.crema.unimi.it>
+	Gian-Luca Dei Rossi	<acaso@venezia.linux.it>
+	Marco D'Itri		<md@linux.it>
+	Rui Miguel Barbosa Machado <rmbm@rccn.net>
+	Daniel Ginsburg		<dbg@nm.ru>
+	Steve Bleazard		<steve@bleazard.com>
+	David Coppa		<coffeec@tin.it>
+
+	Many other, I don't remember.
+
+	Also vim developers, ee.lbl.gov for tcpdump and GNU in general.
+
+	IPv6 support, flood modes:
+	Matyas Koszik		<koszik@atw.hu>
+
+REQUIREMENTS
+
+	A supported unix-like OS, gcc, root access.
+
+	see PORTINGS file for supported systems list.
+
+USAGE
+
+	See the man page and HPING6-HOWTO.
+
+INSTALLATION
+
+	see INSTALL file.
+
+have fun,
+antirez
