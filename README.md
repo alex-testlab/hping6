@@ -3,6 +3,8 @@ This is regular hping2 with a few extra features:
 * `-6` - required for ipv6 destinations
 * `--pps`
 * `--bps` - set outgoing pps/bps rates. Return packets are not processed in these modes.
+* `-flood`-send packets as soon as posible.
+* random source ip and dest ip support ipv6
 
 Example:
 
