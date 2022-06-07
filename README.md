@@ -21,3 +21,12 @@ Example:
     --- ns1.atw.hu hping statistic ---
     12 packets transmitted, 7 packets received, 42% packet loss
     round-trip min/avg/max = 0.9/3006.7/6007.3 ms
+
+
+TCP flood attack with random source ip with ipv6:
+
+    root@testlab:~# ./hping6 2022:1:1:1::2 -6 --rand-source --flood
+
+    `2022:1:1:1::2` is the ipv6 address you want to attack
+
+
